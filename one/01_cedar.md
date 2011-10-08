@@ -89,3 +89,15 @@ a process manager for local development
 # Managed Processes
 
     > heroku scale web=2 worker=1 resque=2
+
+!SLIDE center 
+# Managed Processes
+
+![Process Diagram](process_diagram.png)
+
+!SLIDE bullets incremental 
+# Heroku
+
+* Platform as a Service (PaaS)
+
+

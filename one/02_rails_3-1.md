@@ -1,6 +1,5 @@
 !SLIDE bullets incremental
-# Bullet Points #
+# Rails 3.1
 
-* first point
-* second point
-* third point
+* bundler
+* assets
