@@ -19,19 +19,73 @@
 !SLIDE bullets incremental
 # Deploying Rails 3.1 #
 
-* Process Model
-* Rials 3.1 Specifics
+* Unix Process Model
+* Rails 3.1 Specifics
 
 !SLIDE bullets incremental
-# Unix Process Model 
+# Applying the Unix Process Model to Web Apps
 
-* Applying the Unix Process Model to Web Apps
 * managed process
+* Procfile
+* foreman
 
 !SLIDE bullets incremental
 # Managed Process
 
-* Procfile
+!SLIDE 
+# Ruby Processes
+
+<br/>
+<table style="font-size:2em; margin: 0 auto;">
+  <tr style='background: #666'><th style='padding: 0.3em'>Process type</th><th>Command</th></tr>
+  <tr><td>web</td><td style='padding-left: 1em; font-family: monospace'>bundle exec rails server</td></tr>
+  <tr><td>worker</td><td style='padding-left: 1em; font-family: monospace'>bundle exec rake jobs:work</td></tr>
+</table>
+
+!SLIDE 
+# Python Processes
+
+<br/>
+<table style="font-size:2em; margin: 0 auto;">
+  <tr style='background: #666'><th style='padding: 0.3em'>Process type</th><th>Command</th></tr>
+  <tr><td>web</td><td style='padding-left: 1em; font-family: monospace'>python manage.py runserver</td></tr>
+  <tr><td>worker</td><td style='padding-left: 1em; font-family: monospace'>celeryd --loglevel=INFO</td></tr>
+</table>
+
+!SLIDE 
+# Procfile
+
+a format to declare your process types
+
+!SLIDE
+#Procfile
+
+    web:    bundle exec rails server -p $PORT
+    worker: bundle exec rake jobs:work
+    resque: QUEUE=* bundle exec rake resque:work
+
+!SLIDE 
+# Foreman
+
+a process manager for local development
+
+!SLIDE 
+# Foreman
+
+    > gem install foreman
+    > foreman start
+
+!SLIDE center
+# Foreman
+
+![Foreman Screenshot](foreman_screenshot.png)
 
 !SLIDE bullets incremental
-# Procfile
+# Managed Processes
+
+* heroku scale 
+
+!SLIDE 
+# Managed Processes
+
+    > heroku scale web=2 worker=1 resque=2

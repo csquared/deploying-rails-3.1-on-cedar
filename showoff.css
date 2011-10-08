@@ -27,3 +27,11 @@ body {
 	width: 977px;
 	font: 13px/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
+pre {
+  background-color: #0A0A0D;
+  padding: 5px;
+}
+code {
+  font-size: 0.9em;
+  color: #ccc;
+}
