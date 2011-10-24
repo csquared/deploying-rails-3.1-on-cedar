@@ -2,9 +2,9 @@
 # Rails 3.1 Asset Pipeline #
 
 * Javascript
+* Stylesheets
 * Fonts
 * Images
-* Stylesheets
 
 !SLIDE bullets incremental
 # Asset Compilation #
