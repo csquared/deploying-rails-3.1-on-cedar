@@ -90,8 +90,14 @@
 * node.js
 
 !SLIDE bullets
-# Asset Sync #
+# Appendix A: Linux Deploys #
+
+
+
+!SLIDE bullets
+# Appendix B: Asset Sync #
 
 * [gem](https://github.com/rumblelabs/asset_sync)
 * uploads to S3/Cloudfront
 * [devcenter](http://devcenter.heroku.com/articles/cdn-asset-host-rails31)
+

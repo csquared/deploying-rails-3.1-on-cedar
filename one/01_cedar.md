@@ -1,6 +1,25 @@
 !SLIDE incremental 
 # Deploying Rails 3.1 #
-# on Heroku #
+# on Heroku Cedar#
+
+!SLIDE 
+# About Us
+
+!SLIDE bullets 
+# Terence Lee
+
+* Ruby build-pack team
+* bundler "core"
+* [github.com/hone](http://github.com/hone)
+* [@hone02](http://twitter.com/hone02)
+
+!SLIDE bullets 
+# Chris Continanza
+
+* Add-Ons team
+* patient zero
+* [github.com/csquared](http://github.com/csquared)
+* [@em_csquared](http://twitter.com/em_csquared)
 
 !SLIDE bullets incremental
 # Heroku #
@@ -24,6 +43,7 @@
 
 !SLIDE bullets incremental
 # Applying the Unix Process Model to Web Apps
+### - Adam Wiggins
 
 * managed process
 * Procfile
@@ -44,13 +64,23 @@
 
 !SLIDE 
 # Python Processes
-
 <br/>
 <table style="font-size:2em; margin: 0 auto;">
   <tr style='background: #666'><th style='padding: 0.3em'>Process type</th><th>Command</th></tr>
   <tr><td>web</td><td style='padding-left: 1em; font-family: monospace'>python manage.py runserver</td></tr>
   <tr><td>worker</td><td style='padding-left: 1em; font-family: monospace'>celeryd --loglevel=INFO</td></tr>
 </table>
+
+!SLIDE 
+# Clojure Processes
+<br/>
+<table style="font-size:2em; margin: 0 auto;">
+  <tr style='background: #666'><th style='padding: 0.3em'>Process type</th><th>Command</th></tr>
+  <tr><td>web</td><td style='padding-left: 1em; font-family: monospace'>lein run -m addon.core</td></tr>
+  <tr><td>worker</td><td style='padding-left: 1em; font-family: monospace'>lein run -m addon.worker</td></tr>
+</table>
+
+
 
 !SLIDE 
 # Procfile
@@ -81,13 +111,16 @@ a process manager for local development
 
 ![Foreman Screenshot](foreman_screenshot.png)
 
+!SLIDE center
+# ~ foreman ~ #
+
 !SLIDE bullets incremental
 # Managed Processes
 
 * heroku scale 
 
 !SLIDE 
-# Managed Processes
+# Scaling Managed Processes
 
     > heroku scale web=2 worker=1 resque=2
 
