@@ -87,8 +87,8 @@
 
 a format to declare your process types
 
-!SLIDE
-#Procfile
+!SLIDE code smaller
+# Procfile #
 
     web:    bundle exec rails server -p $PORT
     worker: bundle exec rake jobs:work
