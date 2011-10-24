@@ -25,7 +25,6 @@ GEM
       rack
     rest-client (1.6.7)
       mime-types (>= 1.16)
-    rmagick (2.13.1)
     rubyzip (0.9.4)
     showoff (0.7.0)
       bluecloth
@@ -54,6 +53,5 @@ DEPENDENCIES
   heroku
   nokogiri
   pdfkit
-  rmagick
   showoff
   thin

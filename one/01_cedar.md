@@ -63,6 +63,7 @@ a format to declare your process types
     web:    bundle exec rails server -p $PORT
     worker: bundle exec rake jobs:work
     resque: QUEUE=* bundle exec rake resque:work
+    clock:  bundle exec rake resque:schduler
 
 !SLIDE 
 # Foreman
