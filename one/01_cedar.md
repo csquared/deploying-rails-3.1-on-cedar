@@ -114,6 +114,11 @@ a process manager for local development
 !SLIDE center
 # ~ foreman ~ #
 
+!SLIDE code commandline incremental
+# Deploy 
+
+    $ git push heroku master
+
 !SLIDE bullets incremental
 # Managed Processes
 
