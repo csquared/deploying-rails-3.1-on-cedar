@@ -28,8 +28,9 @@ body {
 	font: 13px/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
-.commandline code.command{
+.commandline code.command, .commandline code.result{
   color: black;
+  line-height: 1.2em;
 } 
 
 pre, code {

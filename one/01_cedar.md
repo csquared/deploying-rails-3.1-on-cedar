@@ -114,15 +114,20 @@ a process manager for local development
 !SLIDE center
 # ~ foreman ~ #
 
-!SLIDE code commandline incremental
+!SLIDE code commandline
 # Deploy 
+### So easy, we almost forgot this slide!
 
     $ git push heroku master
+
+    $ git push staging $(branchname):master
 
 !SLIDE bullets incremental
 # Managed Processes
 
-* heroku scale 
+* we monitor
+* we restart
+* you scale
 
 !SLIDE 
 # Scaling Managed Processes
@@ -138,5 +143,3 @@ a process manager for local development
 # Heroku
 
 * Platform as a Service (PaaS)
-
-

@@ -13,14 +13,14 @@
 * Compiling during slug compilation.
 * Compiling during runtime.
 
-!SLIDE
+!SLIDE commandline
 # Compiling locally #
 
-    RAILS_ENV=production rake assets:precompile
-    git add public/assets
-    git commit -m "vendor compiled assets"
+    $ RAILS_ENV=production rake assets:precompile
+    $ git add public/assets
+    $ git commit -m "vendor compiled assets"
     
-!SLIDE
+!SLIDE commandline incremental
 # Compiling locally #
 
     $ git push heroku master
@@ -41,7 +41,7 @@
 * managing assets via git :(
 * bloated repo
 
-!SLIDE
+!SLIDE commandline
 # Compiling during slug comp #
 
     $ git push heroku master
@@ -60,7 +60,7 @@
 * app's config vars not present
 * rake assets:precompile => assets:environment/environment
 
-!SLIDE
+!SLIDE commandline
 # Compiling during runtime #
 
     $ git push heroku master
@@ -92,6 +92,8 @@
 !SLIDE bullets
 # Appendix A: Linux Deploys #
 
+## `foreman export`
+## generate upstart scripts
 
 
 !SLIDE bullets
