@@ -13,7 +13,7 @@
 * Compiling during slug compilation.
 * Compiling during runtime.
 
-!SLIDE commandline
+!SLIDE commandline incremental
 # Compiling locally #
 
     $ RAILS_ENV=production rake assets:precompile
@@ -41,7 +41,7 @@
 * managing assets via git :(
 * bloated repo
 
-!SLIDE commandline
+!SLIDE commandline incremental
 # Compiling during slug comp #
 
     $ git push heroku master
@@ -60,7 +60,7 @@
 * app's config vars not present
 * rake assets:precompile => assets:environment/environment
 
-!SLIDE commandline
+!SLIDE commandline incremental
 # Compiling during runtime #
 
     $ git push heroku master
