@@ -17,7 +17,7 @@
 # Compiling locally #
 
     $ RAILS_ENV=production rake assets:precompile
-    $ git add public/assets
+    $ git add -f public/assets
     $ git commit -m "vendor compiled assets"
     
 !SLIDE commandline incremental
