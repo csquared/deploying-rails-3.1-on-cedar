@@ -94,3 +94,4 @@
 
 * [gem](https://github.com/rumblelabs/asset_sync)
 * uploads to S3/Cloudfront
+* [devcenter](http://devcenter.heroku.com/articles/cdn-asset-host-rails31)
