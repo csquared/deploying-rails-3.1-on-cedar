@@ -100,11 +100,11 @@ a format to declare your process types
 
 a process manager for local development
 
-!SLIDE 
+!SLIDE commandline
 # Foreman
 
-    > gem install foreman
-    > foreman start
+    $ gem install foreman
+    $ foreman start
 
 !SLIDE center
 # Foreman
