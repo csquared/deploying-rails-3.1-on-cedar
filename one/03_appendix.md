@@ -40,9 +40,14 @@
     # ----- end foreman testapp processes -----
 
 
+.notes We've been working with the Rumbelabs guys to help with getting the assets on a CDN during slug compilation. Right now it supports S3 and Cloudfront. Here's a link to the gem and a devcenter article if you're interested.
 !SLIDE bullets
 # Appendix B: Asset Sync #
 
 * [gem](https://github.com/rumblelabs/asset_sync)
 * uploads to S3/Cloudfront
+* [devcenter](http://devcenter.heroku.com/articles/cdn-asset-host-rails31)
+
+!SLIDE
+# Questions?
 * [devcenter](http://devcenter.heroku.com/articles/cdn-asset-host-rails31)
