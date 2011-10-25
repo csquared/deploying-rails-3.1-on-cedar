@@ -80,14 +80,17 @@
   <tr><td>worker</td><td style='padding-left: 1em; font-family: monospace'>lein run -m addon.worker</td></tr>
 </table>
 
-
-
 !SLIDE 
 # Procfile
 
 a format to declare your process types
 
-!SLIDE
+!SLIDE center 
+# Processes
+
+![Process Diagram](process_diagram.png)
+
+!SLIDE code
 #Procfile
 
     web:    bundle exec rails server -p $PORT
@@ -96,15 +99,20 @@ a format to declare your process types
     clock:  bundle exec rake resque:schduler
 
 !SLIDE 
-# Foreman
+# `foreman`
 
 a process manager for local development
 
-!SLIDE 
-# Foreman
+!SLIDE commandline 
+# `foreman`
 
-    > gem install foreman
-    > foreman start
+    $ gem install foreman
+
+    # run 1 of each process type, and 2 workers
+    $ foreman start -c worker=2
+
+    # do not run a clock process
+    $ foreman start -c clock=0
 
 !SLIDE center
 # Foreman
