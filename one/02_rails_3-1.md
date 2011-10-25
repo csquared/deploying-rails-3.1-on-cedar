@@ -15,7 +15,7 @@
 * Compiling during slug compilation.
 * Compiling during runtime.
 
-.notes To compile locally, we need to run the rake task supplied by rails. This runs sprockets and generates all the assets in a public/assets folder as well as a manifest.yml file which by default in put inside public/assets. We want to make sure to run this in the production environment. Next, we need to add the assets to the git repository. Make sure to use -f, since public/assets is in .gitignore. Then finally, we commit these assets.
+.notes To compile locally, we need to run the rake task supplied by rails, assets:precompile. This runs sprockets and generates all the assets in a public/assets folder as well as a manifest.yml file which by default in put inside public/assets. We want to make sure to run this in the production environment. Next, we need to add the assets to the git repository. Make sure to use -f, since public/assets is in .gitignore. Then finally, we commit these assets.
 !SLIDE commandline incremental
 # Compiling locally #
 
@@ -96,7 +96,7 @@
 * node.js installed on the runtime
 * assets compiled an first request => slow
 
-.notes I just wanted to make a note on Javascript interpreters. Rails 3.1 uses the execjs gem to detect the javascript runtime to use. Please don't use therubyracer on heroku. It uses up a lot of memory and can cause your dyno to hit memory limits. We install node.js into every slug regardless if it's needed above. Please use the node.js binary instead.
+.notes I just wanted to make a note on Javascript interpreters. Rails 3.1 uses the execjs gem to detect the javascript runtime to use. pLEase don't use therubyracer on heroku. It uses up a lot of memory and can cause your dyno to hit memory limits. We install node.js into every slug regardless if it's needed above. Please use the node.js binary instead.
 !SLIDE bullets
 # JS Interpreters #
 
