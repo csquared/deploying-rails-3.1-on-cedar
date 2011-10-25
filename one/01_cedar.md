@@ -1,45 +1,7 @@
-!SLIDE incremental 
-# Deploying Rails 3.1 #
-# on Heroku Cedar#
+!SLIDE center
+# Unix Process Model
 
-!SLIDE 
-# About Us
-
-!SLIDE bullets 
-# Terence Lee
-
-* Ruby build-pack team
-* bundler "core"
-* [github.com/hone](http://github.com/hone)
-* [@hone02](http://twitter.com/hone02)
-
-!SLIDE bullets 
-# Chris Continanza
-
-* Add-Ons team
-* patient zero
-* [github.com/csquared](http://github.com/csquared)
-* [@em_csquared](http://twitter.com/em_csquared)
-
-!SLIDE bullets incremental
-# Heroku #
-
-* PaaS (Platform as a Service)
-* Deploy with git 
-* Scale processes, not servers
-
-!SLIDE center bullets incremental
-# Rails 3.1 #
-
-![Pipeline](pipeline1.jpg)
-
-* (asset pipeline)
-
-!SLIDE bullets incremental
-# Deploying Rails 3.1 #
-
-* Unix Process Model
-* Rails 3.1 Specifics
+![process model](stdinouterror.png)
 
 !SLIDE bullets incremental
 # Applying the Unix Process Model to Web Apps
@@ -50,7 +12,11 @@
 * foreman
 
 !SLIDE bullets incremental
-# Managed Process
+# Managed Processes
+
+* we monitor
+* we restart
+* you scale
 
 !SLIDE 
 # Ruby Processes
@@ -80,15 +46,16 @@
   <tr><td>worker</td><td style='padding-left: 1em; font-family: monospace'>lein run -m addon.worker</td></tr>
 </table>
 
-!SLIDE 
-# Procfile
-
-a format to declare your process types
-
 !SLIDE center 
 # Processes
 
 ![Process Diagram](process_diagram.png)
+
+
+!SLIDE 
+# Procfile
+
+a format to declare your process types
 
 !SLIDE code
 #Procfile
@@ -130,12 +97,6 @@ a process manager for local development
 
     $ git push staging $(branchname):master
 
-!SLIDE bullets incremental
-# Managed Processes
-
-* we monitor
-* we restart
-* you scale
 
 !SLIDE 
 # Scaling Managed Processes
@@ -147,7 +108,5 @@ a process manager for local development
 
 ![Process Diagram](process_diagram.png)
 
-!SLIDE bullets incremental 
-# Heroku
-
-* Platform as a Service (PaaS)
+!SLIDE 
+# ~ scene ~
