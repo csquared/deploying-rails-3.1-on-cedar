@@ -118,3 +118,5 @@
 * uploads to S3/Cloudfront
 * [devcenter](http://devcenter.heroku.com/articles/cdn-asset-host-rails31)
 
+!SLIDE
+# Questions?
